@@ -7,19 +7,22 @@
          "uiTheme": "vs-dark",
          "colorPath": "",
          "defaultLanguages": [
-            "cpp"
+            "cpp", "rust"
          ],
          "path": "./themes/semantic-rainbow-color-theme.json",
          "id": "semantic-rainbow",
          "baseTokenColors": {
             "variable": "#cc4755",
+            "variable:rust": "#b52b47",
             "parameter": "#df7850",
+            "parameter:rust": "#c24b21",
             "typeParameter": "#c76025",
             "type": "#db9b25",
             "interface": "#dbb425",
             "enum": "#b4bd38",
             "enumMember": "#aec496",
             "property": "#88ac47",
+            "property:rust": "#768d33cc",
             "class": "#3aad5d",
             "namespace": "#2b9468",
             "selfParameter": "#64c49b",
@@ -55,9 +58,26 @@
                   "spin": -6
                }
             },
+            "mutable": {
+               "default": {
+                  "lighten": 10,
+                  "desaturate": 5,
+                  "spin": 6
+               },
+               "parameter": {
+                  "lighten": 10,
+                  "desaturate": 2,
+                  "spin": 1
+               }
+            },
             "private": {
                "default": {
                   "alpha": 0.8
+               }
+            },
+            "public": {
+               "default": {
+                  "alpha": 1.3
                }
             },
             "static": {
@@ -256,6 +276,9 @@
             ]
          },
          "alias": {
+            "class": [
+               "struct"
+            ],
             "defaultLibrary": [
                "builtin"
             ],
@@ -268,18 +291,30 @@
             ],
             "function.defaultLibrary": [
                "magicFunction"
+            ],
+            "selfParameter": [
+               "selfKeyword"
             ]
          },
          "modifierCombinations": [
             "readonly.declaration.async",
             "readonly.async",
             "readonly.declaration",
+            "mutable.declaration.async",
+            "mutable.async",
+            "mutable.declaration",
             "private.readonly.declaration",
             "private.readonly",
             "private.readonly.async.declaration",
             "private.declaration",
             "private.async.declaration",
             "private.async",
+            "public.readonly.declaration",
+            "public.readonly",
+            "public.readonly.async.declaration",
+            "public.declaration",
+            "public.async.declaration",
+            "public.async",
             "defaultLibrary.readonly",
             "static.declaration",
             "static.async",

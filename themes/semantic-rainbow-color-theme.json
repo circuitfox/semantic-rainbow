@@ -5,7 +5,9 @@
    "semanticTokenColors": {
       "variable": "#cc4755",
       "variable.readonly": "#b52b47",
+      "variable.mutable": "#d27474",
       "variable.private": "#cc4755cc",
+      "variable.public": "#cc4755",
       "variable.static": "#c33f36",
       "variable.abstract": "#af315e",
       "variable.declaration": {
@@ -45,6 +47,23 @@
          "foreground": "#bc243c",
          "italic": true
       },
+      "variable.mutable.declaration.async": {
+         "foreground": "#e17e82",
+         "italic": true
+      },
+      "variable.mutable.definition.async": {
+         "foreground": "#e17e82",
+         "italic": true
+      },
+      "variable.mutable.async": "#dd838b",
+      "variable.mutable.declaration": {
+         "foreground": "#d8736e",
+         "italic": true
+      },
+      "variable.mutable.definition": {
+         "foreground": "#d8736e",
+         "italic": true
+      },
       "variable.private.readonly.declaration": {
          "foreground": "#bc243ccc",
          "italic": true
@@ -79,6 +98,14 @@
          "italic": true
       },
       "variable.private.async": "#d7566ecc",
+      "variable.public.async.declaration": {
+         "foreground": "#dd4f63",
+         "italic": true
+      },
+      "variable.public.async.definition": {
+         "foreground": "#dd4f63",
+         "italic": true
+      },
       "variable.defaultLibrary.readonly": "#c43652",
       "variable.builtin.readonly": {
          "foreground": "#c43652"
@@ -92,14 +119,6 @@
          "italic": true
       },
       "variable.static.async": "#d24144",
-      "variable.declaration.async": {
-         "foreground": "#dd4f63",
-         "italic": true
-      },
-      "variable.definition.async": {
-         "foreground": "#dd4f63",
-         "italic": true
-      },
       "variable.defaultLibrary.static": "#c7554d",
       "variable.builtin.static": {
          "foreground": "#c7554d"
@@ -130,10 +149,266 @@
       "variable.defaultLibrary.typeArgument": {
          "foreground": "#c19ea1"
       },
-      "variable:lua": "#cc4755",
+      "variable.readonly:rust": "#901d40",
+      "variable.static:rust": "#a0262b",
+      "variable.abstract:rust": "#8c2151",
+      "variable.declaration:rust": {
+         "foreground": "#bc243b",
+         "italic": true
+      },
+      "variable.definition:rust": {
+         "foreground": "#bc243b",
+         "italic": true
+      },
+      "variable.async:rust": "#d02a59",
+      "variable.defaultLibrary:rust": "#b7435b",
+      "variable.builtin:rust": {
+         "foreground": "#b7435b"
+      },
+      "variable.documentation:rust": "#a76b77",
+      "variable.typeHint:rust": {
+         "foreground": "#a76b77"
+      },
+      "variable.typeArgument:rust": {
+         "foreground": "#a76b77"
+      },
+      "variable.readonly.declaration.async:rust": {
+         "foreground": "#b0164a",
+         "italic": true
+      },
+      "variable.readonly.definition.async:rust": {
+         "foreground": "#b0164a",
+         "italic": true
+      },
+      "variable.readonly.async:rust": "#aa1c53",
+      "variable.readonly.declaration:rust": {
+         "foreground": "#951837",
+         "italic": true
+      },
+      "variable.readonly.definition:rust": {
+         "foreground": "#951837",
+         "italic": true
+      },
+      "variable.private.readonly.declaration:rust": {
+         "foreground": "#951837cc",
+         "italic": true
+      },
+      "variable.private.readonly.definition:rust": {
+         "foreground": "#951837cc",
+         "italic": true
+      },
+      "variable.private.readonly:rust": "#901d40cc",
+      "variable.private.readonly.async.declaration:rust": {
+         "foreground": "#b0164acc",
+         "italic": true
+      },
+      "variable.private.readonly.async.definition:rust": {
+         "foreground": "#b0164acc",
+         "italic": true
+      },
+      "variable.private.declaration:rust": {
+         "foreground": "#bc243bcc",
+         "italic": true
+      },
+      "variable.private.definition:rust": {
+         "foreground": "#bc243bcc",
+         "italic": true
+      },
+      "variable.private.async:rust": "#d02a59cc",
+      "variable.defaultLibrary.readonly:rust": "#973050",
+      "variable.builtin.readonly:rust": {
+         "foreground": "#973050"
+      },
+      "variable.static.declaration:rust": {
+         "foreground": "#a62220",
+         "italic": true
+      },
+      "variable.static.definition:rust": {
+         "foreground": "#a62220",
+         "italic": true
+      },
+      "variable.static.async:rust": "#bb2537",
+      "variable.defaultLibrary.static:rust": "#a43c40",
+      "variable.builtin.static:rust": {
+         "foreground": "#a43c40"
+      },
+      "variable.defaultLibrary.declaration:rust": {
+         "foreground": "#be3b50",
+         "italic": true
+      },
+      "variable.builtin.declaration:rust": {
+         "foreground": "#be3b50",
+         "italic": true
+      },
+      "variable.defaultLibrary.definition:rust": {
+         "foreground": "#be3b50",
+         "italic": true
+      },
+      "variable.defaultLibrary.async:rust": "#c64d70",
+      "variable.builtin.async:rust": {
+         "foreground": "#c64d70"
+      },
+      "variable.defaultLibrary.documentation:rust": "#a4888e",
+      "variable.builtin.documentation:rust": {
+         "foreground": "#a4888e"
+      },
+      "variable.defaultLibrary.typeHint:rust": {
+         "foreground": "#a4888e"
+      },
+      "variable.defaultLibrary.typeArgument:rust": {
+         "foreground": "#a4888e"
+      },
+      "variable:rust": "#b52b47",
+      "variable.mutable:rust": "#cc4755",
+      "variable.private:rust": "#b52b47cc",
+      "variable.public:rust": "#b52b47",
+      "variable.mutable.declaration.async:rust": {
+         "foreground": "#dd4f63",
+         "italic": true
+      },
+      "variable.mutable.definition.async:rust": {
+         "foreground": "#dd4f63",
+         "italic": true
+      },
+      "variable.mutable.async:rust": "#d7566e",
+      "variable.mutable.declaration:rust": {
+         "foreground": "#d34048",
+         "italic": true
+      },
+      "variable.mutable.definition:rust": {
+         "foreground": "#d34048",
+         "italic": true
+      },
+      "variable.private.async.declaration:rust": {
+         "foreground": "#d7224dcc",
+         "italic": true
+      },
+      "variable.private.async.definition:rust": {
+         "foreground": "#d7224dcc",
+         "italic": true
+      },
+      "variable.public.async.declaration:rust": {
+         "foreground": "#d7224d",
+         "italic": true
+      },
+      "variable.public.async.definition:rust": {
+         "foreground": "#d7224d",
+         "italic": true
+      },
+      "variable.mutable:cpp": "#d27474",
+      "variable.private:cpp": "#cc4755cc",
+      "variable.static:cpp": "#c33f36",
+      "variable.abstract:cpp": "#af315e",
+      "variable.defaultLibrary:cpp": "#cd606b",
+      "variable.builtin:cpp": {
+         "foreground": "#cd606b"
+      },
+      "variable.documentation:cpp": "#bc898e",
+      "variable.typeHint:cpp": {
+         "foreground": "#bc898e"
+      },
+      "variable.typeArgument:cpp": {
+         "foreground": "#bc898e"
+      },
+      "variable.readonly.async:cpp": "#d02a5a",
+      "variable.readonly.declaration:cpp": {
+         "foreground": "#bc243c",
+         "italic": true
+      },
+      "variable.readonly.definition:cpp": {
+         "foreground": "#bc243c",
+         "italic": true
+      },
+      "variable.mutable.declaration.async:cpp": {
+         "foreground": "#e17e82",
+         "italic": true
+      },
+      "variable.mutable.definition.async:cpp": {
+         "foreground": "#e17e82",
+         "italic": true
+      },
+      "variable.mutable.async:cpp": "#dd838b",
+      "variable.mutable.declaration:cpp": {
+         "foreground": "#d8736e",
+         "italic": true
+      },
+      "variable.mutable.definition:cpp": {
+         "foreground": "#d8736e",
+         "italic": true
+      },
+      "variable.private.readonly.declaration:cpp": {
+         "foreground": "#bc243ccc",
+         "italic": true
+      },
+      "variable.private.readonly.definition:cpp": {
+         "foreground": "#bc243ccc",
+         "italic": true
+      },
+      "variable.private.declaration:cpp": {
+         "foreground": "#d34048cc",
+         "italic": true
+      },
+      "variable.private.definition:cpp": {
+         "foreground": "#d34048cc",
+         "italic": true
+      },
+      "variable.private.async.declaration:cpp": {
+         "foreground": "#dd4f63cc",
+         "italic": true
+      },
+      "variable.private.async.definition:cpp": {
+         "foreground": "#dd4f63cc",
+         "italic": true
+      },
+      "variable.private.async:cpp": "#d7566ecc",
+      "variable.defaultLibrary.readonly:cpp": "#c43652",
+      "variable.builtin.readonly:cpp": {
+         "foreground": "#c43652"
+      },
+      "variable.static.declaration:cpp": {
+         "foreground": "#cb402f",
+         "italic": true
+      },
+      "variable.static.definition:cpp": {
+         "foreground": "#cb402f",
+         "italic": true
+      },
+      "variable.static.async:cpp": "#d24144",
+      "variable.defaultLibrary.static:cpp": "#c7554d",
+      "variable.builtin.static:cpp": {
+         "foreground": "#c7554d"
+      },
+      "variable.defaultLibrary.declaration:cpp": {
+         "foreground": "#d35a60",
+         "italic": true
+      },
+      "variable.builtin.declaration:cpp": {
+         "foreground": "#d35a60",
+         "italic": true
+      },
+      "variable.defaultLibrary.definition:cpp": {
+         "foreground": "#d35a60",
+         "italic": true
+      },
+      "variable.defaultLibrary.async:cpp": "#d86f82",
+      "variable.builtin.async:cpp": {
+         "foreground": "#d86f82"
+      },
+      "variable.defaultLibrary.documentation:cpp": "#c19ea1",
+      "variable.builtin.documentation:cpp": {
+         "foreground": "#c19ea1"
+      },
+      "variable.defaultLibrary.typeHint:cpp": {
+         "foreground": "#c19ea1"
+      },
+      "variable.defaultLibrary.typeArgument:cpp": {
+         "foreground": "#c19ea1"
+      },
       "parameter": "#df7850",
       "parameter.readonly": "#c24b21",
+      "parameter.mutable": "#e59c7d",
       "parameter.private": "#df7850cc",
+      "parameter.public": "#df7850",
       "parameter.static": "#db823a",
       "parameter.abstract": "#d52c27",
       "parameter.declaration": {
@@ -173,6 +448,23 @@
          "foreground": "#c9511a",
          "italic": true
       },
+      "parameter.mutable.declaration.async": {
+         "foreground": "#f1a68b",
+         "italic": true
+      },
+      "parameter.mutable.definition.async": {
+         "foreground": "#f1a68b",
+         "italic": true
+      },
+      "parameter.mutable.async": "#eda38f",
+      "parameter.mutable.declaration": {
+         "foreground": "#ea9f78",
+         "italic": true
+      },
+      "parameter.mutable.definition": {
+         "foreground": "#ea9f78",
+         "italic": true
+      },
       "parameter.private.readonly.declaration": {
          "foreground": "#c9511acc",
          "italic": true
@@ -207,6 +499,14 @@
          "italic": true
       },
       "parameter.private.async": "#e77b61cc",
+      "parameter.public.async.declaration": {
+         "foreground": "#ed7f5c",
+         "italic": true
+      },
+      "parameter.public.async.definition": {
+         "foreground": "#ed7f5c",
+         "italic": true
+      },
       "parameter.defaultLibrary.readonly": "#df7e35",
       "parameter.builtin.readonly": {
          "foreground": "#df7e35"
@@ -220,14 +520,6 @@
          "italic": true
       },
       "parameter.static.async": "#e4824b",
-      "parameter.declaration.async": {
-         "foreground": "#ed7f5c",
-         "italic": true
-      },
-      "parameter.definition.async": {
-         "foreground": "#ed7f5c",
-         "italic": true
-      },
       "parameter.defaultLibrary.static": "#e4b263",
       "parameter.builtin.static": {
          "foreground": "#e4b263"
@@ -258,10 +550,300 @@
       "parameter.defaultLibrary.typeArgument": {
          "foreground": "#e5c6ad"
       },
+      "parameter.readonly:rust": "#822f14",
+      "parameter.mutable:rust": "#db673b",
+      "parameter.static:rust": "#ac5a1d",
+      "parameter.abstract:rust": "#961b1a",
+      "parameter.declaration:rust": {
+         "foreground": "#c9501a",
+         "italic": true
+      },
+      "parameter.definition:rust": {
+         "foreground": "#c9501a",
+         "italic": true
+      },
+      "parameter.async:rust": "#de401e",
+      "parameter.defaultLibrary:rust": "#ca814b",
+      "parameter.builtin:rust": {
+         "foreground": "#ca814b"
+      },
+      "parameter.documentation:rust": "#b37762",
+      "parameter.typeHint:rust": {
+         "foreground": "#b37762"
+      },
+      "parameter.typeArgument:rust": {
+         "foreground": "#b37762"
+      },
+      "parameter.readonly.declaration.async:rust": {
+         "foreground": "#a22d0e",
+         "italic": true
+      },
+      "parameter.readonly.definition.async:rust": {
+         "foreground": "#a22d0e",
+         "italic": true
+      },
+      "parameter.readonly.async:rust": "#9d2913",
+      "parameter.readonly.declaration:rust": {
+         "foreground": "#873310",
+         "italic": true
+      },
+      "parameter.readonly.definition:rust": {
+         "foreground": "#873310",
+         "italic": true
+      },
+      "parameter.mutable.declaration.async:rust": {
+         "foreground": "#ea6e45",
+         "italic": true
+      },
+      "parameter.mutable.definition.async:rust": {
+         "foreground": "#ea6e45",
+         "italic": true
+      },
+      "parameter.mutable.async:rust": "#e4694b",
+      "parameter.mutable.declaration:rust": {
+         "foreground": "#e26d34",
+         "italic": true
+      },
+      "parameter.mutable.definition:rust": {
+         "foreground": "#e26d34",
+         "italic": true
+      },
+      "parameter.private.readonly.declaration:rust": {
+         "foreground": "#873310cc",
+         "italic": true
+      },
+      "parameter.private.readonly.definition:rust": {
+         "foreground": "#873310cc",
+         "italic": true
+      },
+      "parameter.private.readonly:rust": "#822f14cc",
+      "parameter.private.readonly.async.declaration:rust": {
+         "foreground": "#a22d0ecc",
+         "italic": true
+      },
+      "parameter.private.readonly.async.definition:rust": {
+         "foreground": "#a22d0ecc",
+         "italic": true
+      },
+      "parameter.private.declaration:rust": {
+         "foreground": "#c9501acc",
+         "italic": true
+      },
+      "parameter.private.definition:rust": {
+         "foreground": "#c9501acc",
+         "italic": true
+      },
+      "parameter.private.async.declaration:rust": {
+         "foreground": "#e64617cc",
+         "italic": true
+      },
+      "parameter.private.async.definition:rust": {
+         "foreground": "#e64617cc",
+         "italic": true
+      },
+      "parameter.private.async:rust": "#de401ecc",
+      "parameter.public.async.declaration:rust": {
+         "foreground": "#e64617",
+         "italic": true
+      },
+      "parameter.public.async.definition:rust": {
+         "foreground": "#e64617",
+         "italic": true
+      },
+      "parameter.defaultLibrary.readonly:rust": "#9d5a2c",
+      "parameter.builtin.readonly:rust": {
+         "foreground": "#9d5a2c"
+      },
+      "parameter.static.declaration:rust": {
+         "foreground": "#b26117",
+         "italic": true
+      },
+      "parameter.static.definition:rust": {
+         "foreground": "#b26117",
+         "italic": true
+      },
+      "parameter.static.async:rust": "#c8571b",
+      "parameter.defaultLibrary.static:rust": "#c28b39",
+      "parameter.builtin.static:rust": {
+         "foreground": "#c28b39"
+      },
+      "parameter.defaultLibrary.declaration:rust": {
+         "foreground": "#d18744",
+         "italic": true
+      },
+      "parameter.builtin.declaration:rust": {
+         "foreground": "#d18744",
+         "italic": true
+      },
+      "parameter.defaultLibrary.definition:rust": {
+         "foreground": "#d18744",
+         "italic": true
+      },
+      "parameter.defaultLibrary.async:rust": "#d5845a",
+      "parameter.builtin.async:rust": {
+         "foreground": "#d5845a"
+      },
+      "parameter.defaultLibrary.documentation:rust": "#baa08d",
+      "parameter.builtin.documentation:rust": {
+         "foreground": "#baa08d"
+      },
+      "parameter.defaultLibrary.typeHint:rust": {
+         "foreground": "#baa08d"
+      },
+      "parameter.defaultLibrary.typeArgument:rust": {
+         "foreground": "#baa08d"
+      },
+      "parameter:rust": "#c24b21",
+      "parameter.private:rust": "#c24b21cc",
+      "parameter.public:rust": "#c24b21",
       "parameter:lua": "#df7850",
+      "parameter.mutable:cpp": "#e59c7d",
+      "parameter.private:cpp": "#df7850cc",
+      "parameter.static:cpp": "#db823a",
+      "parameter.abstract:cpp": "#d52c27",
+      "parameter.declaration:cpp": {
+         "foreground": "#e57d4a",
+         "italic": true
+      },
+      "parameter.definition:cpp": {
+         "foreground": "#e57d4a",
+         "italic": true
+      },
+      "parameter.async:cpp": "#e77b61",
+      "parameter.defaultLibrary:cpp": "#e8aa79",
+      "parameter.builtin:cpp": {
+         "foreground": "#e8aa79"
+      },
+      "parameter.documentation:cpp": "#d4a18d",
+      "parameter.typeHint:cpp": {
+         "foreground": "#d4a18d"
+      },
+      "parameter.typeArgument:cpp": {
+         "foreground": "#d4a18d"
+      },
+      "parameter.readonly.declaration.async:cpp": {
+         "foreground": "#e54617",
+         "italic": true
+      },
+      "parameter.readonly.definition.async:cpp": {
+         "foreground": "#e54617",
+         "italic": true
+      },
+      "parameter.readonly.async:cpp": "#de411e",
+      "parameter.readonly.declaration:cpp": {
+         "foreground": "#c9511a",
+         "italic": true
+      },
+      "parameter.readonly.definition:cpp": {
+         "foreground": "#c9511a",
+         "italic": true
+      },
+      "parameter.mutable.declaration.async:cpp": {
+         "foreground": "#f1a68b",
+         "italic": true
+      },
+      "parameter.mutable.definition.async:cpp": {
+         "foreground": "#f1a68b",
+         "italic": true
+      },
+      "parameter.mutable.async:cpp": "#eda38f",
+      "parameter.mutable.declaration:cpp": {
+         "foreground": "#ea9f78",
+         "italic": true
+      },
+      "parameter.mutable.definition:cpp": {
+         "foreground": "#ea9f78",
+         "italic": true
+      },
+      "parameter.private.readonly.declaration:cpp": {
+         "foreground": "#c9511acc",
+         "italic": true
+      },
+      "parameter.private.readonly.definition:cpp": {
+         "foreground": "#c9511acc",
+         "italic": true
+      },
+      "parameter.private.readonly.async.declaration:cpp": {
+         "foreground": "#e54617cc",
+         "italic": true
+      },
+      "parameter.private.readonly.async.definition:cpp": {
+         "foreground": "#e54617cc",
+         "italic": true
+      },
+      "parameter.private.declaration:cpp": {
+         "foreground": "#e57d4acc",
+         "italic": true
+      },
+      "parameter.private.definition:cpp": {
+         "foreground": "#e57d4acc",
+         "italic": true
+      },
+      "parameter.private.async.declaration:cpp": {
+         "foreground": "#ed7f5ccc",
+         "italic": true
+      },
+      "parameter.private.async.definition:cpp": {
+         "foreground": "#ed7f5ccc",
+         "italic": true
+      },
+      "parameter.private.async:cpp": "#e77b61cc",
+      "parameter.public.async.declaration:cpp": {
+         "foreground": "#ed7f5c",
+         "italic": true
+      },
+      "parameter.public.async.definition:cpp": {
+         "foreground": "#ed7f5c",
+         "italic": true
+      },
+      "parameter.defaultLibrary.readonly:cpp": "#df7e35",
+      "parameter.builtin.readonly:cpp": {
+         "foreground": "#df7e35"
+      },
+      "parameter.static.declaration:cpp": {
+         "foreground": "#e28a33",
+         "italic": true
+      },
+      "parameter.static.definition:cpp": {
+         "foreground": "#e28a33",
+         "italic": true
+      },
+      "parameter.static.async:cpp": "#e4824b",
+      "parameter.defaultLibrary.static:cpp": "#e4b263",
+      "parameter.builtin.static:cpp": {
+         "foreground": "#e4b263"
+      },
+      "parameter.defaultLibrary.declaration:cpp": {
+         "foreground": "#edb074",
+         "italic": true
+      },
+      "parameter.builtin.declaration:cpp": {
+         "foreground": "#edb074",
+         "italic": true
+      },
+      "parameter.defaultLibrary.definition:cpp": {
+         "foreground": "#edb074",
+         "italic": true
+      },
+      "parameter.defaultLibrary.async:cpp": "#efb08b",
+      "parameter.builtin.async:cpp": {
+         "foreground": "#efb08b"
+      },
+      "parameter.defaultLibrary.documentation:cpp": "#e5c6ad",
+      "parameter.builtin.documentation:cpp": {
+         "foreground": "#e5c6ad"
+      },
+      "parameter.defaultLibrary.typeHint:cpp": {
+         "foreground": "#e5c6ad"
+      },
+      "parameter.defaultLibrary.typeArgument:cpp": {
+         "foreground": "#e5c6ad"
+      },
       "typeParameter": "#c76025",
       "typeParameter.readonly": "#a13c18",
+      "typeParameter.mutable": "#d68a49",
       "typeParameter.private": "#c76025cc",
+      "typeParameter.public": "#c76025",
       "typeParameter.static": "#b16e21",
       "typeParameter.abstract": "#9c2c1d",
       "typeParameter.declaration": {
@@ -301,6 +883,23 @@
          "foreground": "#a64113",
          "italic": true
       },
+      "typeParameter.mutable.declaration.async": {
+         "foreground": "#e69253",
+         "italic": true
+      },
+      "typeParameter.mutable.definition.async": {
+         "foreground": "#e69253",
+         "italic": true
+      },
+      "typeParameter.mutable.async": "#e08c58",
+      "typeParameter.mutable.declaration": {
+         "foreground": "#dd9242",
+         "italic": true
+      },
+      "typeParameter.mutable.definition": {
+         "foreground": "#dd9242",
+         "italic": true
+      },
       "typeParameter.private.readonly.declaration": {
          "foreground": "#a64113cc",
          "italic": true
@@ -335,6 +934,14 @@
          "italic": true
       },
       "typeParameter.private.async": "#de5b27cc",
+      "typeParameter.public.async.declaration": {
+         "foreground": "#e66120",
+         "italic": true
+      },
+      "typeParameter.public.async.definition": {
+         "foreground": "#e66120",
+         "italic": true
+      },
       "typeParameter.defaultLibrary.readonly": "#bd6c2e",
       "typeParameter.builtin.readonly": {
          "foreground": "#bd6c2e"
@@ -348,14 +955,6 @@
          "italic": true
       },
       "typeParameter.static.async": "#cd6d1f",
-      "typeParameter.declaration.async": {
-         "foreground": "#e66120",
-         "italic": true
-      },
-      "typeParameter.definition.async": {
-         "foreground": "#e66120",
-         "italic": true
-      },
       "typeParameter.defaultLibrary.static": "#c89e3c",
       "typeParameter.builtin.static": {
          "foreground": "#c89e3c"
@@ -386,10 +985,11 @@
       "typeParameter.defaultLibrary.typeArgument": {
          "foreground": "#c0a990"
       },
-      "typeParameter:lua": "#c76025",
       "type": "#db9b25",
       "type.readonly": "#b56e18",
+      "type.mutable": "#ddbb56",
       "type.private": "#db9b25cc",
+      "type.public": "#db9b25",
       "type.static": "#c6a721",
       "type.abstract": "#b0581d",
       "type.declaration": {
@@ -429,6 +1029,23 @@
          "foreground": "#bb7712",
          "italic": true
       },
+      "type.mutable.declaration.async": {
+         "foreground": "#ebc461",
+         "italic": true
+      },
+      "type.mutable.definition.async": {
+         "foreground": "#ebc461",
+         "italic": true
+      },
+      "type.mutable.async": "#e6bb67",
+      "type.mutable.declaration": {
+         "foreground": "#e3c550",
+         "italic": true
+      },
+      "type.mutable.definition": {
+         "foreground": "#e3c550",
+         "italic": true
+      },
       "type.private.readonly.declaration": {
          "foreground": "#bb7712cc",
          "italic": true
@@ -463,6 +1080,14 @@
          "italic": true
       },
       "type.private.async": "#e49835cc",
+      "type.public.async.declaration": {
+         "foreground": "#eba22e",
+         "italic": true
+      },
+      "type.public.async.definition": {
+         "foreground": "#eba22e",
+         "italic": true
+      },
       "type.defaultLibrary.readonly": "#b59763",
       "type.builtin.readonly": {
          "foreground": "#b59763"
@@ -476,14 +1101,6 @@
          "italic": true
       },
       "type.static.async": "#e1ad1f",
-      "type.declaration.async": {
-         "foreground": "#eba22e",
-         "italic": true
-      },
-      "type.definition.async": {
-         "foreground": "#eba22e",
-         "italic": true
-      },
       "type.defaultLibrary.static": "#b8b279",
       "type.builtin.static": {
          "foreground": "#b8b279"
@@ -514,10 +1131,11 @@
       "type.defaultLibrary.typeArgument": {
          "foreground": "#bebebe"
       },
-      "type:lua": "#db9b25",
       "interface": "#dbb425",
       "interface.readonly": "#b58418",
+      "interface.mutable": "#ddce56",
       "interface.private": "#dbb425cc",
+      "interface.public": "#dbb425",
       "interface.static": "#c6be21",
       "interface.abstract": "#b06c1d",
       "interface.declaration": {
@@ -557,6 +1175,23 @@
          "foreground": "#bb8e12",
          "italic": true
       },
+      "interface.mutable.declaration.async": {
+         "foreground": "#ebd761",
+         "italic": true
+      },
+      "interface.mutable.definition.async": {
+         "foreground": "#ebd761",
+         "italic": true
+      },
+      "interface.mutable.async": "#e6cd67",
+      "interface.mutable.declaration": {
+         "foreground": "#e3da50",
+         "italic": true
+      },
+      "interface.mutable.definition": {
+         "foreground": "#e3da50",
+         "italic": true
+      },
       "interface.private.readonly.declaration": {
          "foreground": "#bb8e12cc",
          "italic": true
@@ -591,6 +1226,14 @@
          "italic": true
       },
       "interface.private.async": "#e4b035cc",
+      "interface.public.async.declaration": {
+         "foreground": "#ebbc2e",
+         "italic": true
+      },
+      "interface.public.async.definition": {
+         "foreground": "#ebbc2e",
+         "italic": true
+      },
       "interface.defaultLibrary.readonly": "#c8ac52",
       "interface.builtin.readonly": {
          "foreground": "#c8ac52"
@@ -604,14 +1247,6 @@
          "italic": true
       },
       "interface.static.async": "#e1c81f",
-      "interface.declaration.async": {
-         "foreground": "#ebbc2e",
-         "italic": true
-      },
-      "interface.definition.async": {
-         "foreground": "#ebbc2e",
-         "italic": true
-      },
       "interface.defaultLibrary.static": "#c5c96a",
       "interface.builtin.static": {
          "foreground": "#c5c96a"
@@ -642,10 +1277,11 @@
       "interface.defaultLibrary.typeArgument": {
          "foreground": "#cac7b5"
       },
-      "interface:lua": "#dbb425",
       "enum": "#b4bd38",
       "enum.readonly": "#66631a",
+      "enum.mutable": "#b7c95f",
       "enum.private": "#b4bd38cc",
+      "enum.public": "#b4bd38",
       "enum.static": "#8da932",
       "enum.abstract": "#96822c",
       "enum.declaration": {
@@ -685,6 +1321,23 @@
          "foreground": "#686916",
          "italic": true
       },
+      "enum.mutable.declaration.async": {
+         "foreground": "#cada68",
+         "italic": true
+      },
+      "enum.mutable.definition.async": {
+         "foreground": "#cada68",
+         "italic": true
+      },
+      "enum.mutable.async": "#cbd46e",
+      "enum.mutable.declaration": {
+         "foreground": "#b5cf59",
+         "italic": true
+      },
+      "enum.mutable.definition": {
+         "foreground": "#b5cf59",
+         "italic": true
+      },
       "enum.private.readonly.declaration": {
          "foreground": "#686916cc",
          "italic": true
@@ -719,6 +1372,14 @@
          "italic": true
       },
       "enum.private.async": "#cecc40cc",
+      "enum.public.async.declaration": {
+         "foreground": "#d0d539",
+         "italic": true
+      },
+      "enum.public.async.definition": {
+         "foreground": "#d0d539",
+         "italic": true
+      },
       "enum.defaultLibrary.readonly": "#79852c",
       "enum.builtin.readonly": {
          "foreground": "#79852c"
@@ -732,14 +1393,6 @@
          "italic": true
       },
       "enum.static.async": "#adc332",
-      "enum.declaration.async": {
-         "foreground": "#d0d539",
-         "italic": true
-      },
-      "enum.definition.async": {
-         "foreground": "#d0d539",
-         "italic": true
-      },
       "enum.defaultLibrary.static": "#91bd50",
       "enum.builtin.static": {
          "foreground": "#91bd50"
@@ -770,10 +1423,11 @@
       "enum.defaultLibrary.typeArgument": {
          "foreground": "#b2b7a2"
       },
-      "enum:lua": "#b4bd38",
       "enumMember": "#aec496",
       "enumMember.readonly": "#7c984d",
+      "enumMember.mutable": "#c4d4b9",
       "enumMember.private": "#aec496cc",
+      "enumMember.public": "#aec496",
       "enumMember.static": "#99bb86",
       "enumMember.abstract": "#a4b275",
       "enumMember.declaration": {
@@ -813,6 +1467,23 @@
          "foreground": "#799f46",
          "italic": true
       },
+      "enumMember.mutable.declaration.async": {
+         "foreground": "#d2e2c4",
+         "italic": true
+      },
+      "enumMember.mutable.definition.async": {
+         "foreground": "#d2e2c4",
+         "italic": true
+      },
+      "enumMember.mutable.async": "#d3dfc7",
+      "enumMember.mutable.declaration": {
+         "foreground": "#c2d7b6",
+         "italic": true
+      },
+      "enumMember.mutable.definition": {
+         "foreground": "#c2d7b6",
+         "italic": true
+      },
       "enumMember.private.readonly.declaration": {
          "foreground": "#799f46cc",
          "italic": true
@@ -847,6 +1518,14 @@
          "italic": true
       },
       "enumMember.private.async": "#bfd1a3cc",
+      "enumMember.public.async.declaration": {
+         "foreground": "#bdd59f",
+         "italic": true
+      },
+      "enumMember.public.async.definition": {
+         "foreground": "#bdd59f",
+         "italic": true
+      },
       "enumMember.defaultLibrary.readonly": "#88a76f",
       "enumMember.builtin.readonly": {
          "foreground": "#88a76f"
@@ -860,14 +1539,6 @@
          "italic": true
       },
       "enumMember.static.async": "#aac892",
-      "enumMember.declaration.async": {
-         "foreground": "#bdd59f",
-         "italic": true
-      },
-      "enumMember.definition.async": {
-         "foreground": "#bdd59f",
-         "italic": true
-      },
       "enumMember.defaultLibrary.static": "#b0c7ac",
       "enumMember.builtin.static": {
          "foreground": "#b0c7ac"
@@ -898,10 +1569,11 @@
       "enumMember.defaultLibrary.typeArgument": {
          "foreground": "#d9dcd8"
       },
-      "enumMember:lua": "#aec496",
       "property": "#88ac47",
       "property.readonly": "#768d33",
+      "property.mutable": "#96ba6c",
       "property.private": "#88ac47cc",
+      "property.public": "#88ac47",
       "property.static": "#6b9a40",
       "property.abstract": "#7f8838",
       "property.declaration": {
@@ -941,6 +1613,23 @@
          "foreground": "#74922e",
          "italic": true
       },
+      "property.mutable.declaration.async": {
+         "foreground": "#a7cd72",
+         "italic": true
+      },
+      "property.mutable.definition.async": {
+         "foreground": "#a7cd72",
+         "italic": true
+      },
+      "property.mutable.async": "#aac778",
+      "property.mutable.declaration": {
+         "foreground": "#92c165",
+         "italic": true
+      },
+      "property.mutable.definition": {
+         "foreground": "#92c165",
+         "italic": true
+      },
       "property.private.readonly.declaration": {
          "foreground": "#74922ecc",
          "italic": true
@@ -975,6 +1664,14 @@
          "italic": true
       },
       "property.private.async": "#a0be4ecc",
+      "property.public.async.declaration": {
+         "foreground": "#9dc647",
+         "italic": true
+      },
+      "property.public.async.definition": {
+         "foreground": "#9dc647",
+         "italic": true
+      },
       "property.defaultLibrary.readonly": "#80a34f",
       "property.builtin.readonly": {
          "foreground": "#80a34f"
@@ -988,14 +1685,6 @@
          "italic": true
       },
       "property.static.async": "#80b241",
-      "property.declaration.async": {
-         "foreground": "#9dc647",
-         "italic": true
-      },
-      "property.definition.async": {
-         "foreground": "#9dc647",
-         "italic": true
-      },
       "property.defaultLibrary.static": "#78aa61",
       "property.builtin.static": {
          "foreground": "#78aa61"
@@ -1026,8 +1715,334 @@
       "property.defaultLibrary.typeArgument": {
          "foreground": "#ababab"
       },
+      "property.readonly:rust": "#606b22cc",
+      "property.private:rust": "#768d33a3",
+      "property.static:rust": "#597a2ccc",
+      "property.abstract:rust": "#676725cc",
+      "property.declaration:rust": {
+         "foreground": "#74932dcc",
+         "italic": true
+      },
+      "property.definition:rust": {
+         "foreground": "#74932dcc",
+         "italic": true
+      },
+      "property.async:rust": "#92a534cc",
+      "property.defaultLibrary:rust": "#7e985acc",
+      "property.builtin:rust": {
+         "foreground": "#7e985acc"
+      },
+      "property.documentation:rust": "#7f846ecc",
+      "property.typeHint:rust": {
+         "foreground": "#7f846ecc"
+      },
+      "property.typeArgument:rust": {
+         "foreground": "#7f846ecc"
+      },
+      "property.readonly.declaration.async:rust": {
+         "foreground": "#7b871fcc",
+         "italic": true
+      },
+      "property.readonly.definition.async:rust": {
+         "foreground": "#7b871fcc",
+         "italic": true
+      },
+      "property.readonly.async:rust": "#7c8224cc",
+      "property.readonly.declaration:rust": {
+         "foreground": "#5e6f1ecc",
+         "italic": true
+      },
+      "property.readonly.definition:rust": {
+         "foreground": "#5e6f1ecc",
+         "italic": true
+      },
+      "property.mutable.declaration.async:rust": {
+         "foreground": "#9dc646cc",
+         "italic": true
+      },
+      "property.mutable.definition.async:rust": {
+         "foreground": "#9dc646cc",
+         "italic": true
+      },
+      "property.mutable.async:rust": "#a0bf4ecc",
+      "property.mutable.declaration:rust": {
+         "foreground": "#84b43fcc",
+         "italic": true
+      },
+      "property.mutable.definition:rust": {
+         "foreground": "#84b43fcc",
+         "italic": true
+      },
+      "property.private.readonly.declaration:rust": {
+         "foreground": "#5e6f1ea3",
+         "italic": true
+      },
+      "property.private.readonly.definition:rust": {
+         "foreground": "#5e6f1ea3",
+         "italic": true
+      },
+      "property.private.readonly:rust": "#606b22a3",
+      "property.private.readonly.async.declaration:rust": {
+         "foreground": "#7b871fa3",
+         "italic": true
+      },
+      "property.private.readonly.async.definition:rust": {
+         "foreground": "#7b871fa3",
+         "italic": true
+      },
+      "property.private.declaration:rust": {
+         "foreground": "#74932da3",
+         "italic": true
+      },
+      "property.private.definition:rust": {
+         "foreground": "#74932da3",
+         "italic": true
+      },
+      "property.private.async.declaration:rust": {
+         "foreground": "#90ac2ea3",
+         "italic": true
+      },
+      "property.private.async.definition:rust": {
+         "foreground": "#90ac2ea3",
+         "italic": true
+      },
+      "property.private.async:rust": "#92a534a3",
+      "property.public.readonly.declaration:rust": {
+         "foreground": "#5e6f1e",
+         "italic": true
+      },
+      "property.public.readonly.definition:rust": {
+         "foreground": "#5e6f1e",
+         "italic": true
+      },
+      "property.public.readonly:rust": "#606b22",
+      "property.public.readonly.async.declaration:rust": {
+         "foreground": "#7b871f",
+         "italic": true
+      },
+      "property.public.readonly.async.definition:rust": {
+         "foreground": "#7b871f",
+         "italic": true
+      },
+      "property.public.declaration:rust": {
+         "foreground": "#74932d",
+         "italic": true
+      },
+      "property.public.definition:rust": {
+         "foreground": "#74932d",
+         "italic": true
+      },
+      "property.public.async.declaration:rust": {
+         "foreground": "#90ac2e",
+         "italic": true
+      },
+      "property.public.async.definition:rust": {
+         "foreground": "#90ac2e",
+         "italic": true
+      },
+      "property.public.async:rust": "#92a534",
+      "property.defaultLibrary.readonly:rust": "#6a7d42cc",
+      "property.builtin.readonly:rust": {
+         "foreground": "#6a7d42cc"
+      },
+      "property.static.declaration:rust": {
+         "foreground": "#567f27cc",
+         "italic": true
+      },
+      "property.static.definition:rust": {
+         "foreground": "#567f27cc",
+         "italic": true
+      },
+      "property.static.async:rust": "#70922ecc",
+      "property.declaration.async:rust": {
+         "foreground": "#90ac2ecc",
+         "italic": true
+      },
+      "property.definition.async:rust": {
+         "foreground": "#90ac2ecc",
+         "italic": true
+      },
+      "property.defaultLibrary.static:rust": "#678851cc",
+      "property.builtin.static:rust": {
+         "foreground": "#678851cc"
+      },
+      "property.defaultLibrary.declaration:rust": {
+         "foreground": "#7b9f53cc",
+         "italic": true
+      },
+      "property.builtin.declaration:rust": {
+         "foreground": "#7b9f53cc",
+         "italic": true
+      },
+      "property.defaultLibrary.definition:rust": {
+         "foreground": "#7b9f53cc",
+         "italic": true
+      },
+      "property.defaultLibrary.async:rust": "#92ab61cc",
+      "property.builtin.async:rust": {
+         "foreground": "#92ab61cc"
+      },
+      "property.defaultLibrary.documentation:rust": "#929292cc",
+      "property.builtin.documentation:rust": {
+         "foreground": "#929292cc"
+      },
+      "property.defaultLibrary.typeHint:rust": {
+         "foreground": "#929292cc"
+      },
+      "property.defaultLibrary.typeArgument:rust": {
+         "foreground": "#929292cc"
+      },
+      "property:rust": "#768d33cc",
+      "property.mutable:rust": "#88ac47cc",
+      "property.public:rust": "#768d33",
       "property:lua": "#88ac47",
+      "property.mutable:cpp": "#96ba6c",
+      "property.static:cpp": "#6b9a40",
+      "property.abstract:cpp": "#7f8838",
+      "property.declaration:cpp": {
+         "foreground": "#84b340",
+         "italic": true
+      },
+      "property.definition:cpp": {
+         "foreground": "#84b340",
+         "italic": true
+      },
+      "property.async:cpp": "#a0be4e",
+      "property.defaultLibrary:cpp": "#91b372",
+      "property.builtin:cpp": {
+         "foreground": "#91b372"
+      },
+      "property.documentation:cpp": "#959a8b",
+      "property.typeHint:cpp": {
+         "foreground": "#959a8b"
+      },
+      "property.typeArgument:cpp": {
+         "foreground": "#959a8b"
+      },
+      "property.readonly.declaration.async:cpp": {
+         "foreground": "#8fab2e",
+         "italic": true
+      },
+      "property.readonly.definition.async:cpp": {
+         "foreground": "#8fab2e",
+         "italic": true
+      },
+      "property.readonly.async:cpp": "#91a535",
+      "property.readonly.declaration:cpp": {
+         "foreground": "#74922e",
+         "italic": true
+      },
+      "property.readonly.definition:cpp": {
+         "foreground": "#74922e",
+         "italic": true
+      },
+      "property.mutable.declaration.async:cpp": {
+         "foreground": "#a7cd72",
+         "italic": true
+      },
+      "property.mutable.definition.async:cpp": {
+         "foreground": "#a7cd72",
+         "italic": true
+      },
+      "property.mutable.async:cpp": "#aac778",
+      "property.mutable.declaration:cpp": {
+         "foreground": "#92c165",
+         "italic": true
+      },
+      "property.mutable.definition:cpp": {
+         "foreground": "#92c165",
+         "italic": true
+      },
+      "property.private.readonly.declaration:cpp": {
+         "foreground": "#74922ecc",
+         "italic": true
+      },
+      "property.private.readonly.definition:cpp": {
+         "foreground": "#74922ecc",
+         "italic": true
+      },
+      "property.private.readonly:cpp": "#768d33cc",
+      "property.private.readonly.async.declaration:cpp": {
+         "foreground": "#8fab2ecc",
+         "italic": true
+      },
+      "property.private.readonly.async.definition:cpp": {
+         "foreground": "#8fab2ecc",
+         "italic": true
+      },
+      "property.private.declaration:cpp": {
+         "foreground": "#84b340cc",
+         "italic": true
+      },
+      "property.private.definition:cpp": {
+         "foreground": "#84b340cc",
+         "italic": true
+      },
+      "property.private.async.declaration:cpp": {
+         "foreground": "#9dc647cc",
+         "italic": true
+      },
+      "property.private.async.definition:cpp": {
+         "foreground": "#9dc647cc",
+         "italic": true
+      },
+      "property.private.async:cpp": "#a0be4ecc",
+      "property.public.async.declaration:cpp": {
+         "foreground": "#9dc647",
+         "italic": true
+      },
+      "property.public.async.definition:cpp": {
+         "foreground": "#9dc647",
+         "italic": true
+      },
+      "property.defaultLibrary.readonly:cpp": "#80a34f",
+      "property.builtin.readonly:cpp": {
+         "foreground": "#80a34f"
+      },
+      "property.static.declaration:cpp": {
+         "foreground": "#65a039",
+         "italic": true
+      },
+      "property.static.definition:cpp": {
+         "foreground": "#65a039",
+         "italic": true
+      },
+      "property.static.async:cpp": "#80b241",
+      "property.defaultLibrary.static:cpp": "#78aa61",
+      "property.builtin.static:cpp": {
+         "foreground": "#78aa61"
+      },
+      "property.defaultLibrary.declaration:cpp": {
+         "foreground": "#8dba6b",
+         "italic": true
+      },
+      "property.builtin.declaration:cpp": {
+         "foreground": "#8dba6b",
+         "italic": true
+      },
+      "property.defaultLibrary.definition:cpp": {
+         "foreground": "#8dba6b",
+         "italic": true
+      },
+      "property.defaultLibrary.async:cpp": "#a3c17e",
+      "property.builtin.async:cpp": {
+         "foreground": "#a3c17e"
+      },
+      "property.defaultLibrary.documentation:cpp": "#ababab",
+      "property.builtin.documentation:cpp": {
+         "foreground": "#ababab"
+      },
+      "property.defaultLibrary.typeHint:cpp": {
+         "foreground": "#ababab"
+      },
+      "property.defaultLibrary.typeArgument:cpp": {
+         "foreground": "#ababab"
+      },
       "class": {
+         "foreground": "#3aad5d",
+         "bold": true
+      },
+      "struct": {
          "foreground": "#3aad5d",
          "bold": true
       },
@@ -1035,11 +2050,39 @@
          "foreground": "#298b3d",
          "bold": true
       },
+      "struct.readonly": {
+         "foreground": "#298b3d",
+         "bold": true
+      },
+      "class.mutable": {
+         "foreground": "#5ac083",
+         "bold": true
+      },
+      "struct.mutable": {
+         "foreground": "#5ac083",
+         "bold": true
+      },
       "class.private": {
          "foreground": "#3aad5dcc",
          "bold": true
       },
+      "struct.private": {
+         "foreground": "#3aad5dcc",
+         "bold": true
+      },
+      "class.public": {
+         "foreground": "#3aad5d",
+         "bold": true
+      },
+      "struct.public": {
+         "foreground": "#3aad5d",
+         "bold": true
+      },
       "class.static": {
+         "foreground": "#349a64",
+         "bold": true
+      },
+      "struct.static": {
          "foreground": "#349a64",
          "bold": true
       },
@@ -1047,7 +2090,16 @@
          "foreground": "#2d8732",
          "bold": true
       },
+      "struct.abstract": {
+         "foreground": "#2d8732",
+         "bold": true
+      },
       "class.declaration": {
+         "foreground": "#33b461",
+         "bold": true,
+         "italic": true
+      },
+      "struct.declaration": {
          "foreground": "#33b461",
          "bold": true,
          "italic": true
@@ -1061,7 +2113,15 @@
          "foreground": "#3bc65a",
          "bold": true
       },
+      "struct.async": {
+         "foreground": "#3bc65a",
+         "bold": true
+      },
       "class.defaultLibrary": {
+         "foreground": "#64b58a",
+         "bold": true
+      },
+      "struct.defaultLibrary": {
          "foreground": "#64b58a",
          "bold": true
       },
@@ -1070,6 +2130,10 @@
          "bold": true
       },
       "class.documentation": {
+         "foreground": "#7b9e86",
+         "bold": true
+      },
+      "struct.documentation": {
          "foreground": "#7b9e86",
          "bold": true
       },
@@ -1086,6 +2150,11 @@
          "bold": true,
          "italic": true
       },
+      "struct.readonly.declaration.async": {
+         "foreground": "#23aa3a",
+         "bold": true,
+         "italic": true
+      },
       "class.readonly.definition.async": {
          "foreground": "#23aa3a",
          "bold": true,
@@ -1095,7 +2164,16 @@
          "foreground": "#29a438",
          "bold": true
       },
+      "struct.readonly.async": {
+         "foreground": "#29a438",
+         "bold": true
+      },
       "class.readonly.declaration": {
+         "foreground": "#23913f",
+         "bold": true,
+         "italic": true
+      },
+      "struct.readonly.declaration": {
          "foreground": "#23913f",
          "bold": true,
          "italic": true
@@ -1105,7 +2183,50 @@
          "bold": true,
          "italic": true
       },
+      "class.mutable.declaration.async": {
+         "foreground": "#61d28b",
+         "bold": true,
+         "italic": true
+      },
+      "struct.mutable.declaration.async": {
+         "foreground": "#61d28b",
+         "bold": true,
+         "italic": true
+      },
+      "class.mutable.definition.async": {
+         "foreground": "#61d28b",
+         "bold": true,
+         "italic": true
+      },
+      "class.mutable.async": {
+         "foreground": "#67cc88",
+         "bold": true
+      },
+      "struct.mutable.async": {
+         "foreground": "#67cc88",
+         "bold": true
+      },
+      "class.mutable.declaration": {
+         "foreground": "#53c788",
+         "bold": true,
+         "italic": true
+      },
+      "struct.mutable.declaration": {
+         "foreground": "#53c788",
+         "bold": true,
+         "italic": true
+      },
+      "class.mutable.definition": {
+         "foreground": "#53c788",
+         "bold": true,
+         "italic": true
+      },
       "class.private.readonly.declaration": {
+         "foreground": "#23913fcc",
+         "bold": true,
+         "italic": true
+      },
+      "struct.private.readonly.declaration": {
          "foreground": "#23913fcc",
          "bold": true,
          "italic": true
@@ -1119,7 +2240,16 @@
          "foreground": "#298b3dcc",
          "bold": true
       },
+      "struct.private.readonly": {
+         "foreground": "#298b3dcc",
+         "bold": true
+      },
       "class.private.readonly.async.declaration": {
+         "foreground": "#23aa3acc",
+         "bold": true,
+         "italic": true
+      },
+      "struct.private.readonly.async.declaration": {
          "foreground": "#23aa3acc",
          "bold": true,
          "italic": true
@@ -1134,12 +2264,22 @@
          "bold": true,
          "italic": true
       },
+      "struct.private.declaration": {
+         "foreground": "#33b461cc",
+         "bold": true,
+         "italic": true
+      },
       "class.private.definition": {
          "foreground": "#33b461cc",
          "bold": true,
          "italic": true
       },
       "class.private.async.declaration": {
+         "foreground": "#33cd5dcc",
+         "bold": true,
+         "italic": true
+      },
+      "struct.private.async.declaration": {
          "foreground": "#33cd5dcc",
          "bold": true,
          "italic": true
@@ -1153,7 +2293,30 @@
          "foreground": "#3bc65acc",
          "bold": true
       },
+      "struct.private.async": {
+         "foreground": "#3bc65acc",
+         "bold": true
+      },
+      "class.public.async.declaration": {
+         "foreground": "#33cd5d",
+         "bold": true,
+         "italic": true
+      },
+      "struct.public.async.declaration": {
+         "foreground": "#33cd5d",
+         "bold": true,
+         "italic": true
+      },
+      "class.public.async.definition": {
+         "foreground": "#33cd5d",
+         "bold": true,
+         "italic": true
+      },
       "class.defaultLibrary.readonly": {
+         "foreground": "#45a167",
+         "bold": true
+      },
+      "struct.defaultLibrary.readonly": {
          "foreground": "#45a167",
          "bold": true
       },
@@ -1162,6 +2325,11 @@
          "bold": true
       },
       "class.static.declaration": {
+         "foreground": "#2da069",
+         "bold": true,
+         "italic": true
+      },
+      "struct.static.declaration": {
          "foreground": "#2da069",
          "bold": true,
          "italic": true
@@ -1175,17 +2343,15 @@
          "foreground": "#34b365",
          "bold": true
       },
-      "class.declaration.async": {
-         "foreground": "#33cd5d",
-         "bold": true,
-         "italic": true
-      },
-      "class.definition.async": {
-         "foreground": "#33cd5d",
-         "bold": true,
-         "italic": true
+      "struct.static.async": {
+         "foreground": "#34b365",
+         "bold": true
       },
       "class.defaultLibrary.static": {
+         "foreground": "#53ad8d",
+         "bold": true
+      },
+      "struct.defaultLibrary.static": {
          "foreground": "#53ad8d",
          "bold": true
       },
@@ -1194,6 +2360,11 @@
          "bold": true
       },
       "class.defaultLibrary.declaration": {
+         "foreground": "#5dbc8f",
+         "bold": true,
+         "italic": true
+      },
+      "struct.defaultLibrary.declaration": {
          "foreground": "#5dbc8f",
          "bold": true,
          "italic": true
@@ -1212,11 +2383,19 @@
          "foreground": "#70c290",
          "bold": true
       },
+      "struct.defaultLibrary.async": {
+         "foreground": "#70c290",
+         "bold": true
+      },
       "class.builtin.async": {
          "foreground": "#70c290",
          "bold": true
       },
       "class.defaultLibrary.documentation": {
+         "foreground": "#a5a6a5",
+         "bold": true
+      },
+      "struct.defaultLibrary.documentation": {
          "foreground": "#a5a6a5",
          "bold": true
       },
@@ -1232,13 +2411,11 @@
          "foreground": "#a5a6a5",
          "bold": true
       },
-      "class:lua": {
-         "foreground": "#3aad5d",
-         "bold": true
-      },
       "namespace": "#2b9468",
       "namespace.readonly": "#1c7044",
+      "namespace.mutable": "#3db58f",
       "namespace.private": "#2b9468cc",
+      "namespace.public": "#2b9468",
       "namespace.static": "#258069",
       "namespace.abstract": "#206c39",
       "namespace.declaration": {
@@ -1278,6 +2455,23 @@
          "foreground": "#187449",
          "italic": true
       },
+      "namespace.mutable.declaration.async": {
+         "foreground": "#3cd09c",
+         "italic": true
+      },
+      "namespace.mutable.definition.async": {
+         "foreground": "#3cd09c",
+         "italic": true
+      },
+      "namespace.mutable.async": "#43c893",
+      "namespace.mutable.declaration": {
+         "foreground": "#35bd98",
+         "italic": true
+      },
+      "namespace.mutable.definition": {
+         "foreground": "#35bd98",
+         "italic": true
+      },
       "namespace.private.readonly.declaration": {
          "foreground": "#187449cc",
          "italic": true
@@ -1312,6 +2506,14 @@
          "italic": true
       },
       "namespace.private.async": "#2bad6ccc",
+      "namespace.public.async.declaration": {
+         "foreground": "#25b473",
+         "italic": true
+      },
+      "namespace.public.async.definition": {
+         "foreground": "#25b473",
+         "italic": true
+      },
       "namespace.defaultLibrary.readonly": "#3c826a",
       "namespace.builtin.readonly": {
          "foreground": "#3c826a"
@@ -1325,14 +2527,6 @@
          "italic": true
       },
       "namespace.static.async": "#269972",
-      "namespace.declaration.async": {
-         "foreground": "#25b473",
-         "italic": true
-      },
-      "namespace.definition.async": {
-         "foreground": "#25b473",
-         "italic": true
-      },
       "namespace.defaultLibrary.static": "#498e88",
       "namespace.builtin.static": {
          "foreground": "#498e88"
@@ -1363,12 +2557,34 @@
       "namespace.defaultLibrary.typeArgument": {
          "foreground": "#919191"
       },
-      "namespace:lua": "#2b9468",
       "selfParameter": "#64c49b",
+      "selfKeyword": {
+         "foreground": "#64c49b"
+      },
       "selfParameter.readonly": "#3db877",
+      "selfKeyword.readonly": {
+         "foreground": "#3db877"
+      },
+      "selfParameter.mutable": "#8dceb9",
+      "selfKeyword.mutable": {
+         "foreground": "#8dceb9"
+      },
       "selfParameter.private": "#64c49bcc",
+      "selfKeyword.private": {
+         "foreground": "#64c49bcc"
+      },
+      "selfParameter.public": "#64c49b",
+      "selfKeyword.public": {
+         "foreground": "#64c49b"
+      },
       "selfParameter.static": "#52bda1",
+      "selfKeyword.static": {
+         "foreground": "#52bda1"
+      },
       "selfParameter.abstract": "#44b167",
+      "selfKeyword.abstract": {
+         "foreground": "#44b167"
+      },
       "selfParameter.declaration": {
          "foreground": "#5ecaa1",
          "italic": true
@@ -1377,9 +2593,19 @@
          "foreground": "#5ecaa1",
          "italic": true
       },
+      "selfKeyword.declaration": {
+         "foreground": "#5ecaa1",
+         "italic": true
+      },
       "selfParameter.async": "#72d0a0",
+      "selfKeyword.async": {
+         "foreground": "#72d0a0"
+      },
       "selfParameter.defaultLibrary": "#8dcdbd",
       "selfParameter.builtin": {
+         "foreground": "#8dcdbd"
+      },
+      "selfKeyword.defaultLibrary": {
          "foreground": "#8dcdbd"
       },
       "selfParameter.documentation": "#a2b8af",
@@ -1387,6 +2613,9 @@
          "foreground": "#a2b8af"
       },
       "selfParameter.typeArgument": {
+         "foreground": "#a2b8af"
+      },
+      "selfKeyword.documentation": {
          "foreground": "#a2b8af"
       },
       "selfParameter.readonly.declaration.async": {
@@ -1397,13 +2626,52 @@
          "foreground": "#3ed07e",
          "italic": true
       },
+      "selfKeyword.readonly.declaration.async": {
+         "foreground": "#3ed07e",
+         "italic": true
+      },
       "selfParameter.readonly.async": "#46c979",
+      "selfKeyword.readonly.async": {
+         "foreground": "#46c979"
+      },
       "selfParameter.readonly.declaration": {
          "foreground": "#36bf7e",
          "italic": true
       },
       "selfParameter.readonly.definition": {
          "foreground": "#36bf7e",
+         "italic": true
+      },
+      "selfKeyword.readonly.declaration": {
+         "foreground": "#36bf7e",
+         "italic": true
+      },
+      "selfParameter.mutable.declaration.async": {
+         "foreground": "#97ddc4",
+         "italic": true
+      },
+      "selfParameter.mutable.definition.async": {
+         "foreground": "#97ddc4",
+         "italic": true
+      },
+      "selfKeyword.mutable.declaration.async": {
+         "foreground": "#97ddc4",
+         "italic": true
+      },
+      "selfParameter.mutable.async": "#9bd9c0",
+      "selfKeyword.mutable.async": {
+         "foreground": "#9bd9c0"
+      },
+      "selfParameter.mutable.declaration": {
+         "foreground": "#88d3be",
+         "italic": true
+      },
+      "selfParameter.mutable.definition": {
+         "foreground": "#88d3be",
+         "italic": true
+      },
+      "selfKeyword.mutable.declaration": {
+         "foreground": "#88d3be",
          "italic": true
       },
       "selfParameter.private.readonly.declaration": {
@@ -1414,12 +2682,23 @@
          "foreground": "#36bf7ecc",
          "italic": true
       },
+      "selfKeyword.private.readonly.declaration": {
+         "foreground": "#36bf7ecc",
+         "italic": true
+      },
       "selfParameter.private.readonly": "#3db877cc",
+      "selfKeyword.private.readonly": {
+         "foreground": "#3db877cc"
+      },
       "selfParameter.private.readonly.async.declaration": {
          "foreground": "#3ed07ecc",
          "italic": true
       },
       "selfParameter.private.readonly.async.definition": {
+         "foreground": "#3ed07ecc",
+         "italic": true
+      },
+      "selfKeyword.private.readonly.async.declaration": {
          "foreground": "#3ed07ecc",
          "italic": true
       },
@@ -1431,6 +2710,10 @@
          "foreground": "#5ecaa1cc",
          "italic": true
       },
+      "selfKeyword.private.declaration": {
+         "foreground": "#5ecaa1cc",
+         "italic": true
+      },
       "selfParameter.private.async.declaration": {
          "foreground": "#6cd5a5cc",
          "italic": true
@@ -1439,9 +2722,31 @@
          "foreground": "#6cd5a5cc",
          "italic": true
       },
+      "selfKeyword.private.async.declaration": {
+         "foreground": "#6cd5a5cc",
+         "italic": true
+      },
       "selfParameter.private.async": "#72d0a0cc",
+      "selfKeyword.private.async": {
+         "foreground": "#72d0a0cc"
+      },
+      "selfParameter.public.async.declaration": {
+         "foreground": "#6cd5a5",
+         "italic": true
+      },
+      "selfParameter.public.async.definition": {
+         "foreground": "#6cd5a5",
+         "italic": true
+      },
+      "selfKeyword.public.async.declaration": {
+         "foreground": "#6cd5a5",
+         "italic": true
+      },
       "selfParameter.defaultLibrary.readonly": "#64c3a1",
       "selfParameter.builtin.readonly": {
+         "foreground": "#64c3a1"
+      },
+      "selfKeyword.defaultLibrary.readonly": {
          "foreground": "#64c3a1"
       },
       "selfParameter.static.declaration": {
@@ -1452,17 +2757,19 @@
          "foreground": "#4ac4aa",
          "italic": true
       },
-      "selfParameter.static.async": "#5fc9a5",
-      "selfParameter.declaration.async": {
-         "foreground": "#6cd5a5",
+      "selfKeyword.static.declaration": {
+         "foreground": "#4ac4aa",
          "italic": true
       },
-      "selfParameter.definition.async": {
-         "foreground": "#6cd5a5",
-         "italic": true
+      "selfParameter.static.async": "#5fc9a5",
+      "selfKeyword.static.async": {
+         "foreground": "#5fc9a5"
       },
       "selfParameter.defaultLibrary.static": "#7bc5bf",
       "selfParameter.builtin.static": {
+         "foreground": "#7bc5bf"
+      },
+      "selfKeyword.defaultLibrary.static": {
          "foreground": "#7bc5bf"
       },
       "selfParameter.defaultLibrary.declaration": {
@@ -1477,8 +2784,15 @@
          "foreground": "#88d2c3",
          "italic": true
       },
+      "selfKeyword.defaultLibrary.declaration": {
+         "foreground": "#88d2c3",
+         "italic": true
+      },
       "selfParameter.defaultLibrary.async": "#9bd8c4",
       "selfParameter.builtin.async": {
+         "foreground": "#9bd8c4"
+      },
+      "selfKeyword.defaultLibrary.async": {
          "foreground": "#9bd8c4"
       },
       "selfParameter.defaultLibrary.documentation": "#c3c9c8",
@@ -1491,10 +2805,14 @@
       "selfParameter.defaultLibrary.typeArgument": {
          "foreground": "#c3c9c8"
       },
-      "selfParameter:lua": "#64c49b",
+      "selfKeyword.defaultLibrary.documentation": {
+         "foreground": "#c3c9c8"
+      },
       "method": "#20a6be",
       "method.readonly": "#149097",
+      "method.mutable": "#3aafd7",
       "method.private": "#20a6becc",
+      "method.public": "#20a6be",
       "method.static": "#1c7ca8",
       "method.abstract": "#199286",
       "method.declaration": {
@@ -1534,6 +2852,23 @@
          "foreground": "#0f8d9c",
          "italic": true
       },
+      "method.mutable.declaration.async": {
+         "foreground": "#44c3e7",
+         "italic": true
+      },
+      "method.mutable.definition.async": {
+         "foreground": "#44c3e7",
+         "italic": true
+      },
+      "method.mutable.async": "#4ac7e0",
+      "method.mutable.declaration": {
+         "foreground": "#33aade",
+         "italic": true
+      },
+      "method.mutable.definition": {
+         "foreground": "#33aade",
+         "italic": true
+      },
       "method.private.readonly.declaration": {
          "foreground": "#0f8d9ccc",
          "italic": true
@@ -1568,6 +2903,14 @@
          "italic": true
       },
       "method.private.async": "#1dcddacc",
+      "method.public.async.declaration": {
+         "foreground": "#16c9e1",
+         "italic": true
+      },
+      "method.public.async.definition": {
+         "foreground": "#16c9e1",
+         "italic": true
+      },
       "method.defaultLibrary.readonly": "#2f92ae",
       "method.builtin.readonly": {
          "foreground": "#2f92ae"
@@ -1581,14 +2924,6 @@
          "italic": true
       },
       "method.static.async": "#1a9cc3",
-      "method.declaration.async": {
-         "foreground": "#16c9e1",
-         "italic": true
-      },
-      "method.definition.async": {
-         "foreground": "#16c9e1",
-         "italic": true
-      },
       "method.defaultLibrary.static": "#3b7dbb",
       "method.builtin.static": {
          "foreground": "#3b7dbb"
@@ -1619,10 +2954,11 @@
       "method.defaultLibrary.typeArgument": {
          "foreground": "#8da8b5"
       },
-      "method:lua": "#20a6be",
       "function": "#407de6",
       "function.readonly": "#1673dd",
+      "function.mutable": "#7191e8",
       "function.private": "#407de6cc",
+      "function.public": "#407de6",
       "function.static": "#294fe3",
       "function.abstract": "#1c8fd7",
       "function.declaration": {
@@ -1665,6 +3001,23 @@
          "foreground": "#0f68e4",
          "italic": true
       },
+      "function.mutable.declaration.async": {
+         "foreground": "#7fa2f3",
+         "italic": true
+      },
+      "function.mutable.definition.async": {
+         "foreground": "#7fa2f3",
+         "italic": true
+      },
+      "function.mutable.async": "#84a9ef",
+      "function.mutable.declaration": {
+         "foreground": "#6c88ed",
+         "italic": true
+      },
+      "function.mutable.definition": {
+         "foreground": "#6c88ed",
+         "italic": true
+      },
       "function.private.readonly.declaration": {
          "foreground": "#0f68e4cc",
          "italic": true
@@ -1699,6 +3052,14 @@
          "italic": true
       },
       "function.private.async": "#5298eecc",
+      "function.public.async.declaration": {
+         "foreground": "#4c8ff3",
+         "italic": true
+      },
+      "function.public.async.definition": {
+         "foreground": "#4c8ff3",
+         "italic": true
+      },
       "function.defaultLibrary.readonly": "#366def",
       "function.builtin.readonly": {
          "foreground": "#366def"
@@ -1715,14 +3076,6 @@
          "italic": true
       },
       "function.static.async": "#3b6deb",
-      "function.declaration.async": {
-         "foreground": "#4c8ff3",
-         "italic": true
-      },
-      "function.definition.async": {
-         "foreground": "#4c8ff3",
-         "italic": true
-      },
       "function.defaultLibrary.static": "#5257ed",
       "function.builtin.static": {
          "foreground": "#5257ed"
@@ -1766,10 +3119,11 @@
       "magicFunction.documentation": {
          "foreground": "#9faeeb"
       },
-      "function:lua": "#407de6",
       "macro": "#5457ec",
       "macro.readonly": "#384eef",
+      "macro.mutable": "#8e85ee",
       "macro.private": "#5457eccc",
+      "macro.public": "#5457ec",
       "macro.static": "#563de9",
       "macro.abstract": "#265ae7",
       "macro.declaration": {
@@ -1809,6 +3163,23 @@
          "foreground": "#313ff5",
          "italic": true
       },
+      "macro.mutable.declaration.async": {
+         "foreground": "#9a95f7",
+         "italic": true
+      },
+      "macro.mutable.definition.async": {
+         "foreground": "#9a95f7",
+         "italic": true
+      },
+      "macro.mutable.async": "#9999f4",
+      "macro.mutable.declaration": {
+         "foreground": "#9081f2",
+         "italic": true
+      },
+      "macro.mutable.definition": {
+         "foreground": "#9081f2",
+         "italic": true
+      },
       "macro.private.readonly.declaration": {
          "foreground": "#313ff5cc",
          "italic": true
@@ -1843,6 +3214,14 @@
          "italic": true
       },
       "macro.private.async": "#6775f3cc",
+      "macro.public.async.declaration": {
+         "foreground": "#626af8",
+         "italic": true
+      },
+      "macro.public.async.definition": {
+         "foreground": "#626af8",
+         "italic": true
+      },
       "macro.defaultLibrary.readonly": "#655ffa",
       "macro.builtin.readonly": {
          "foreground": "#655ffa"
@@ -1856,14 +3235,6 @@
          "italic": true
       },
       "macro.static.async": "#5a4ff1",
-      "macro.declaration.async": {
-         "foreground": "#626af8",
-         "italic": true
-      },
-      "macro.definition.async": {
-         "foreground": "#626af8",
-         "italic": true
-      },
       "macro.defaultLibrary.static": "#9063f6",
       "macro.builtin.static": {
          "foreground": "#9063f6"
@@ -1893,8 +3264,7 @@
       },
       "macro.defaultLibrary.typeArgument": {
          "foreground": "#b7acf7"
-      },
-      "macro:lua": "#5457ec"
+      }
    },
    "tokenColors": [
       {
@@ -2945,6 +4315,15 @@
          }
       },
       {
+         "name": "function:lua",
+         "scope": [
+            "support.function.any-method"
+         ],
+         "settings": {
+            "foreground": "#407de6"
+         }
+      },
+      {
          "name": "variable",
          "scope": [
             "variable.other.readwrite",
@@ -2986,16 +4365,81 @@
          }
       },
       {
-         "name": "variable:lua",
+         "name": "variable.readonly:rust",
          "scope": [
-            "source.lua variable.other.readwrite",
-            "source.lua variable.other",
-            "source.lua variable",
-            "source.lua support.variable",
-            "source.lua string.other.link.title.markdown"
+            "source.rust entity.name.tag"
          ],
          "settings": {
-            "foreground": "#cc4755"
+            "foreground": "#901d40"
+         }
+      },
+      {
+         "name": "variable.declaration:rust",
+         "scope": [
+            "source.rust variable.other.assignment.shell"
+         ],
+         "settings": {
+            "foreground": "#bc243b",
+            "fontStyle": "italic"
+         }
+      },
+      {
+         "name": "variable.defaultLibrary.readonly:rust",
+         "scope": [
+            "source.rust const"
+         ],
+         "settings": {
+            "foreground": "#973050"
+         }
+      },
+      {
+         "name": "variable:rust",
+         "scope": [
+            "source.rust variable.other.readwrite",
+            "source.rust variable.other",
+            "source.rust variable",
+            "source.rust support.variable",
+            "source.rust string.other.link.title.markdown"
+         ],
+         "settings": {
+            "foreground": "#b52b47"
+         }
+      },
+      {
+         "name": "variable.readonly:rust",
+         "scope": [
+            "source.rust entity.name.tag"
+         ],
+         "settings": {
+            "foreground": "#901d40"
+         }
+      },
+      {
+         "name": "variable.declaration:rust",
+         "scope": [
+            "source.rust variable.other.assignment.shell"
+         ],
+         "settings": {
+            "foreground": "#bc243b",
+            "fontStyle": "italic"
+         }
+      },
+      {
+         "name": "variable.defaultLibrary.readonly:rust",
+         "scope": [
+            "source.rust const"
+         ],
+         "settings": {
+            "foreground": "#973050"
+         }
+      },
+      {
+         "name": "variable.defaultLibrary.readonly:cpp",
+         "scope": [
+            "source.cpp const"
+         ],
+         "settings": {
+            "foreground": "#c43652"
          }
       },
       {
@@ -3009,6 +4453,19 @@
          ],
          "settings": {
             "foreground": "#df7850"
+         }
+      },
+      {
+         "name": "parameter:rust",
+         "scope": [
+            "source.rust variable.parameter.function",
+            "source.rust variable.parameter",
+            "source.rust variable.parameter.function-call",
+            "source.rust meta.function.parameter",
+            "source.rust meta.function.parameters"
+         ],
+         "settings": {
+            "foreground": "#c24b21"
          }
       },
       {
@@ -3029,16 +4486,6 @@
          "scope": [
             "entity.name.type.template",
             "storage.type.template.argument"
-         ],
-         "settings": {
-            "foreground": "#c76025"
-         }
-      },
-      {
-         "name": "typeParameter:lua",
-         "scope": [
-            "source.lua entity.name.type.template",
-            "source.lua storage.type.template.argument"
          ],
          "settings": {
             "foreground": "#c76025"
@@ -3099,18 +4546,6 @@
          }
       },
       {
-         "name": "type:lua",
-         "scope": [
-            "source.lua entity.name.type.alias",
-            "source.lua support.type",
-            "source.lua markup.italic.markdown",
-            "source.lua entity.name.type.kotlin"
-         ],
-         "settings": {
-            "foreground": "#db9b25"
-         }
-      },
-      {
          "name": "interface.readonly",
          "scope": [
             "comment.line.double-dash.doc variable"
@@ -3149,6 +4584,47 @@
          ],
          "settings": {
             "foreground": "#768d33"
+         }
+      },
+      {
+         "name": "property.readonly:rust",
+         "scope": [
+            "source.rust markup.list.numbered.markdown"
+         ],
+         "settings": {
+            "foreground": "#606b22cc"
+         }
+      },
+      {
+         "name": "property:rust",
+         "scope": [
+            "source.rust variable.other.property",
+            "source.rust support.variable.property",
+            "source.rust variable.other.object.property",
+            "source.rust variable.other.table.property",
+            "source.rust meta.attribute",
+            "source.rust constant.other.option",
+            "source.rust support.type.property-name",
+            "source.rust variable.object.property",
+            "source.rust meta.flow-mapping.yaml",
+            "source.rust entity.other.attribute",
+            "source.rust support.type.property-name.css",
+            "source.rust meta.property-name",
+            "source.rust entity.other.attribute-name",
+            "source.rust entity.name.tag.yaml",
+            "source.rust markup.list.unnumbered.markdown"
+         ],
+         "settings": {
+            "foreground": "#768d33cc"
+         }
+      },
+      {
+         "name": "property.readonly:rust",
+         "scope": [
+            "source.rust markup.list.numbered.markdown"
+         ],
+         "settings": {
+            "foreground": "#606b22cc"
          }
       },
       {
@@ -3199,34 +4675,10 @@
          }
       },
       {
-         "name": "class:lua",
-         "scope": [
-            "source.lua entity.name.type.class",
-            "source.lua entity.name.class",
-            "source.lua entity.other.inherited-class",
-            "source.lua entity.name.function-table",
-            "source.lua entity.other.attribute-name.class"
-         ],
-         "settings": {
-            "foreground": "#3aad5d",
-            "fontStyle": "bold"
-         }
-      },
-      {
          "name": "namespace",
          "scope": [
             "meta.symbol.namespace",
             "entity.name.scope-resolution"
-         ],
-         "settings": {
-            "foreground": "#2b9468"
-         }
-      },
-      {
-         "name": "namespace:lua",
-         "scope": [
-            "source.lua meta.symbol.namespace",
-            "source.lua entity.name.scope-resolution"
          ],
          "settings": {
             "foreground": "#2b9468"
@@ -3245,36 +4697,12 @@
          }
       },
       {
-         "name": "selfParameter:lua",
-         "scope": [
-            "source.lua variable.language.java",
-            "source.lua variable.language.this",
-            "source.lua variable.language.self",
-            "source.lua variable.language.special.self"
-         ],
-         "settings": {
-            "foreground": "#64c49b"
-         }
-      },
-      {
          "name": "method",
          "scope": [
             "meta.directive.vue",
             "entity.name.method-function",
             "entity.other.attribute-name.pseudo-class",
             "entity.name.function.member"
-         ],
-         "settings": {
-            "foreground": "#20a6be"
-         }
-      },
-      {
-         "name": "method:lua",
-         "scope": [
-            "source.lua meta.directive.vue",
-            "source.lua entity.name.method-function",
-            "source.lua entity.other.attribute-name.pseudo-class",
-            "source.lua entity.name.function.member"
          ],
          "settings": {
             "foreground": "#20a6be"
@@ -3314,15 +4742,6 @@
          }
       },
       {
-         "name": "function:lua",
-         "scope": [
-            "support.function.any-method"
-         ],
-         "settings": {
-            "foreground": "#407de6"
-         }
-      },
-      {
          "name": "macro",
          "scope": [
             "entity.name.other.preprocessor.macro"
@@ -3338,15 +4757,6 @@
          ],
          "settings": {
             "foreground": "#8d7bf7"
-         }
-      },
-      {
-         "name": "macro:lua",
-         "scope": [
-            "source.lua entity.name.other.preprocessor.macro"
-         ],
-         "settings": {
-            "foreground": "#5457ec"
          }
       }
    ],
